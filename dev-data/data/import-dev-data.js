@@ -12,7 +12,7 @@ const DB = process.env.DATABASE_LOCAL;
  
 
 mongoose
-  .connect(DB, {
+  .connect("mongodb://localhost:27017/natours", {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false
